@@ -171,7 +171,11 @@ p  { font-size: 0.97rem; color: var(--gray-700); line-height: 1.8; }
   display: flex; align-items: center; justify-content: space-between;
   padding: 0.7rem 0;
 }
-.nav-logo { display: flex; align-items: center; }
+.nav-logo { display: flex; align-items: center; gap: 0.8rem; }
+.logo-text { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--gold); line-height: 1.2; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; }
+@media (max-width: 768px) {
+  .logo-text { display: none; }
+}
 .nav-logo img { height: clamp(54px, 8vw, 84px); width: auto; filter: drop-shadow(0 2px 8px rgba(200,168,75,0.3)); transition: height 0.3s ease; }
 
 .nav-links {
@@ -256,7 +260,7 @@ p  { font-size: 0.97rem; color: var(--gray-700); line-height: 1.8; }
 }
 .hero-content {
   position: relative; z-index: 2;
-  padding-top: 120px;
+  padding-top: 160px;
   max-width: 760px;
 }
 .hero-badge {
@@ -710,7 +714,7 @@ footer {
   min-height: 400px;
   position: relative; overflow: hidden;
   display: flex; align-items: center;
-  padding-top: 110px; padding-bottom: 3rem;
+  padding-top: 150px; padding-bottom: 3rem;
 }
 .page-hero-bg {
   position: absolute; inset: 0; opacity: 0.18;
@@ -972,7 +976,7 @@ footer {
 .dc-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray-500); font-weight: 700; }
 .dc-val   { font-size: 0.93rem; font-weight: 600; color: var(--navy); }
 .map-wrap { border-radius: var(--radius-lg); overflow: hidden; }
-.map-wrap iframe { width: 100%; height: 260px; border: none; display: block; }
+.map-wrap iframe { width: 100%; height: 450px; border: none; display: block; }
 
 /* ================================================
    RESPONSIVE
@@ -985,7 +989,8 @@ footer {
   .featured-grid     { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
   .feat-card.tall    { grid-row: span 1; }
   .footer-grid       { grid-template-columns: 1fr 1fr; }
-  .owner-grid        { grid-template-columns: 1fr; }
+  .owner-grid        { grid-template-columns: 1fr; gap: 3rem; }
+  .owner-card        { right: 1rem; bottom: 1rem; }
   .values-grid       { grid-template-columns: repeat(2,1fr); }
   .contact-grid      { grid-template-columns: 1fr; }
   .service-full      { grid-template-columns: 1fr; direction: ltr; }

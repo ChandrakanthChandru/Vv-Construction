@@ -39,6 +39,7 @@ document.body.insertAdjacentHTML('afterbegin', `
       <div class="nav-inner">
         <a href="index.html" class="nav-logo" aria-label="VV Construction Home">
           <img src="assets/images/logo.png" alt="VV Construction & Interior Design Logo" />
+          <span class="logo-text">VV Construction &amp; Interior Design</span>
         </a>
         <ul class="nav-links" role="list">
           <li><a href="index.html">Home</a></li>
